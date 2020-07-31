@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Rock Paper or Scissors</title>
+</head>
+<body>
+
+    <header class="header">
+        <h2 class="header__tittle">Rock, Paper or Scissors</h2>
+    </header>
+    <main class="main_container">
+        <div class="main_container__card">
+            <div class="main_container__card--title">
+                <img id="user_option_selected" src="./img/user_icon.png" alt="">
+                <p>User</p>
+                <p id="user_score">0</p>
+            </div>
+
+            <div class="main_container__img">
+                <img src="./img/vs_icon.png" alt="">
+                <div class="child_container__text">
+                    <h4>Match # </h4>
+                    <span id="match_number">0</span>
+                </div>
+                <p id="match_result">No result</p>
+            </div>
+
+            <div class="main_container__card--title">
+                <img id="cpu_option_selected" src="./img/cpu.png" alt="">
+                <p>CPU</p>
+                <p id="cpu_score">0</p>
+            </div>
+        </div>
+        <div class="container_options">
+            <div class="container_options_img">
+                <div class="container_options__option">
+                    <button id="rock" class="container_options__button" style="background-image: url('./img/rock.png');"></button>
+
+                </div>
+
+                <div class="container_options__option">
+                    <button id="paper" class="container_options__button" style="background-image: url('./img/paper.png');"></button>
+
+                </div>
+
+                <div class="container_options__option">
+                    <button id="scissors" class="container_options__button" style="background-image: url('./img/scissors.png');"></button>
+
+                </div>
+            </div>
+            <div class="instructions">
+                <p>Choose an option!</p>
+            </div>
+        </div>
+
+        <div class="container_button">
+            <button id="start_game">Play</button>
+        </div>
+    </main>
+
+    <script src="./js/game.js"></script>
+  
+</body>
+</html>
